@@ -2,6 +2,7 @@ import Vue from 'vue'
 import { storiesOf } from '@storybook/vue'
 
 import BarChart from './index'
+import readme from './readme.md'
 
 const barChart = () => ({
   components: { BarChart },
@@ -23,4 +24,8 @@ const barChart = () => ({
   },
 })
 
-storiesOf('Bar Chart', module).add('柱状图', barChart)
+storiesOf('Bar Chart', module).add('柱状图', barChart, {
+  info: {
+    summary: readme,
+  },
+})

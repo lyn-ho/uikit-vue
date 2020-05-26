@@ -9,30 +9,40 @@ export default {
   name: 'BarChart',
 
   props: {
+    /**
+     * 数值系列的颜色列表
+     */
     color: {
-      // 数值系列的颜色列表
       type: Array,
       default() {
         return ['#FF9900', '#66CC00']
       },
     },
+    /**
+     * 图标宽度
+     */
     width: {
-      // 图标宽度
       type: String,
       default: '35%',
     },
+    /**
+     * 图标高度
+     */
     height: {
-      // 图标高度
       type: String,
       default: '350px',
     },
+    /**
+     * y轴刻度
+     */
     yAxisData: {
-      // y轴刻度
       type: Array,
       default: () => [],
     },
+    /**
+     * 系列数据
+     */
     seriesData: {
-      // 系列数据
       type: Object,
       default: () => null,
     },

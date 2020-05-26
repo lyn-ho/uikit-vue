@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/vue'
 
 import utils from '../lib/utils'
 import LineChart from './index'
-import LineChartReadme from './readme.md'
+import readme from './readme.md'
 import { fakeResponse2, fakeResponse1 } from './line-chart.fakedata'
 
 const lineChart1 = () => ({
@@ -77,11 +77,11 @@ const lineChart2 = () => ({
 storiesOf('Line Chart', module)
   .add('单数据折线图', lineChart1, {
     info: {
-      header: true,
+      summary: readme,
     },
   })
   .add('多数据折线图', lineChart2, {
     info: {
-      header: true,
+      summary: readme,
     },
   })

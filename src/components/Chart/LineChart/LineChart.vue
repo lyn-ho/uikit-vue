@@ -8,57 +8,78 @@ import echarts from 'echarts'
 export default {
   name: 'LineChart',
   props: {
-    // 数值系列的颜色列表
+    /**
+     * 数值系列的颜色列表
+     */
     color: {
       type: Array,
       default() {
         return ['#66CC00', '#FF9900']
       },
     },
-    // 系列图例名称
+    /**
+     * 系列图例名称
+     */
     seriesName: {
       type: Array,
       default() {
         return []
       },
     },
-    // 系列标题名称
+    /**
+     * 系列标题名称
+     */
     titleText: {
       type: String,
       default: '',
     },
-    // 系列副标题名称
+    /**
+     * 系列副标题名称
+     */
     titleSubText: {
       type: String,
       default: '',
     },
-    // 系列提示框单位
+    /**
+     * 系列提示框单位
+     */
     unit: {
       type: String,
       default: '%',
     },
-    // 纵坐标名称
+    /**
+     * 纵坐标名称
+     */
     yAxisName: {
       type: String,
       default: '',
     },
-    // 图标宽度
+    /**
+     * 图标宽度
+     */
     width: {
       type: String,
       default: '35%',
     },
-    // 图标高度
+    /**
+     * 图标高度
+     */
     height: {
       type: String,
       default: '350px',
     },
-    // 系列数据
+    /**
+     * 系列数据
+     */
     seriesData: {
       type: Array,
       default() {
         return []
       },
     },
+    /**
+     * Zoom 组件
+     */
     dataZoom: {
       type: Boolean,
       default: false,

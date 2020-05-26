@@ -6,6 +6,7 @@ addDecorator(withInfo)
 setDefaults({
   header: false,
   info: {
+    header: true,
     source: true,
   },
 })
