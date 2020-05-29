@@ -1,12 +1,26 @@
 {
   "name": "uikit-vue",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.4",
+  "description": "uikit",
+  "author": "Lyn",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/bundle.js",
+  "unpkg": "dist/bundle.js",
+  "module": "dist/bundle.es.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyn-ho/uikit-vue.git"
+  },
   "scripts": {
     "build": "rollup --config",
+    "prepublishOnly": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "core-js": "^3.6.4",
     "echarts": "^4.8.0",

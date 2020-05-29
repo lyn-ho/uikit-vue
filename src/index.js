@@ -9,7 +9,11 @@ const components = [BarChart, LineChart]
  */
 const install = function(Vue) {
   if (install.installed) return
-  components.map((component) => Vue.component(component.name, component))
+  components.forEach((component) => Vue.component(component.name, component))
+}
+
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue)
 }
 
 export default {
@@ -17,3 +21,6 @@ export default {
   ...components,
 }
 export { install, components }
+
+
+

@@ -1,29 +1,15 @@
 # uikit-vue
 
-## Project setup
+## 安装
+
 ```
-npm install
+npm install uikit-vue --save
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 使用
 
-### Compiles and minifies for production
 ```
-npm run build
-```
+import UIKit from 'uikit-vue'
 
-### Run your unit tests
+Vue.use(uikit-vue)
 ```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
